@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> Catalogue </title>
+
+<!-- This will be used to format colours-->
+<style>
+
+	body {
+		background-color: antiquewhite;
+	}
+	body {
+		font-family: helvetica;
+	}
+	p {
+		font-family: helvetica;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		display: block;
+		background-color: GoldenRod;
+		width: 80px;
+		color: white;
+		text-decoration: none;
+		padding: 0.2em 0.6em;
+	}
+	a:hover {
+		background-color: Gold;
+	}
+	li {
+		display: inline;
+	}
+	
+</style>
+
+</head>
+
+<!--The title of the page-->
+<body>
+
+<!--Menu-->
+<div align="right">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="register.html">Register</a></li>
+	<li><a href="login.html">Log in</a></li>
+</ul>
+</div>
+
+	<b><center><h1>Our Selection Of Donuts</h1></center></b>
+	<p><br> Our donuts are all freshly made, hand crafted, and able to be delivered in under an hour!</p>
+	<br><br>
+
+<!--Beginning of form-->
+	<form action="Purchase.py" method="get">
+
+<!--Hidden username field-->
+	<input type="hidden" name="username" value=""/>
+
+<!-- everything for apple cider fritter -->
+	<p style="font size:150%"> Apple Cider Fritter <p>
+	<img src="http://www.browneyedbaker.com/wp-content/uploads/2012/10/apple-fritter-doughnuts-45-575.jpg" style="width:400px;height:250px"><br>
+	<p style="font-size:85%"> $3.99 a piece</p>
+	<p style="width:400px"><b>Description: </b>This is a well known favourite, and for good reason. A delicately soft donut with hints of grandma's homemade apple fritters. One will never be enough, so order lots! </p>
+	I Want This <input type="checkbox" name="purchase1"/>
+	<br>
+	Quantity <input type="number" name="Quantity1" value ='0'/>
+	<br><br><br>
+
+
+<!--Everything for red velvet cake-->
+	<p style="font-size:150%"> Red Velvet Cake <p>
+	<img src=http://go.dallasnews.com/media/img/photos/2013/03/08/thumbs/pookies_donut.jpg.728x520_q85.jpg style="width:400px;height:250px"><br>
+	<p style="font-size:85%"> $2.99 a piece</p>
+	<p style="width:400px"><b>Description: </b>A decadently rich red velvet treat. A dessert lovers dream, it combines the flavour or your favourite cake with the consistency of a donut. This also comes with homemade cream cheese frosting, ask nicely and we'll give you extra.</p>
+
+	I Want This <input type="checkbox" name="purchase2"/>
+	<br>
+	Quantity <input type="number" name="Quantity2" value='0'/> 
+	<br><br><br>
+
+<!--Everything for banana caramel pecan-->
+	<p style="font-size:150%"> Banana Caramel Pecan </p>
+	<img src="http://i0.wp.com/thefrostedvegan.com/wp-content/uploads/2013/03/018.jpg" style="width:400px;height:300px"><br>
+	<p style="font-size:85%"> $3.49 a piece</p>
+	<p style="width:400px"><b>Description: </b>A quality donut made with real banana and garnished with pecans and caramel drizzle, this one is guaranteed to satisfy those sugary wintery cravings. Our banana caramel pecan donuts sell fast, get them while you can!</p>
+
+	I Want This <input type="checkbox" name="purchase3"/>
+	<br>
+	Quantity <input type="number" name="Quantity3" value='0'/>
+	<br><br><br>
+
+<!--Everything for maple bacon-->
+	<p style="font-size:150%"> Maple Bacon Delight</p>
+	<img src="http://4.bp.blogspot.com/-bFfDpXUUN1o/TbhOTvCYFZI/AAAAAAAABYk/4lZCAFq44PY/s1600/IMG_8719.JPG" style="width:400px;height:300px"/><br>
+	<p style = "font-size:85%"> $19.99 a piece</p>
+	<p style="width:400px"><b>Description: </b>Disgusting and overpriced you say? Not even. As soon as you try one of these you won't know how to stop. These are freshly made donuts made with Canadian maple syrup and topped with crispy maple smoked bacon. Order more than three and we'll add a double helping of bacon pieces. </p>
+
+	I want this <input type="checkbox" name="purchase4"/>
+	<br>
+	Quantity <input type="number" name="Quantity4" value='0'/>
+	<br><br><br>
+
+	<center>
+	<input type="submit" value="Proceed to checkout">
+	</center>
+	</form>
+</html>
+
+
