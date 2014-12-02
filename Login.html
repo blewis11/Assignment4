@@ -1,0 +1,68 @@
+<html>
+
+    <head>
+        <title> Login </title>
+    </head>
+
+
+    <style>
+
+        body {
+                background-color: antiquewhite;
+        }
+        body {
+                font-family: helvetica;
+        }
+        p {
+                font-family: helvetica;
+        }
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+        }
+        #menu a {
+                display: block;
+                background-color: GoldenRod;
+                width: 80px;
+                color: white;
+                text-decoration: none;
+                padding: 0.2em 0.6em;
+        }
+        #menu a:hover {
+                background-color: Gold;
+        }
+        li {
+                display: inline;
+        }
+
+    </style>
+
+
+    <body>
+
+        <!--Menu-->
+	<div align="right" id="menu">
+	    <ul>
+                <li><a href="Home.html" >Home</a></li>
+                <li><a href="Catalog.html">Catalog</a></li>
+                <li><a href="Login.html">Log in</a></li>
+	    </ul>
+	</div>
+
+
+	<form action="Login.cgi" method="post">
+
+	    <br />
+            Username: <br />
+	    <input type="text" name="Username" maxlength="100" /><br />
+	    Password: <br /> 
+	    <input type="password" name="Password" maxlength="100" /><br />
+	    <input type="submit" value="Log in">
+	    <br /><br />
+	
+	</form>
+
+	Not a member? <a href="Register.html">REGISTER NOW</a> to take advantage of our quality donuts!
+
+    </body>
