@@ -24,11 +24,9 @@ int printCatalogue(char* username){
 	}
 
 	fgets(buffer, 400, catalogue);
-
     }
 
     return EXIT_SUCCESS;
-
 }
 
 //Adds the user to LoggedIn.csv if isn't logged in already
