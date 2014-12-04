@@ -11,7 +11,7 @@ body {
     font-family: helvetica;
 }
 
-a[target]{
+#menu a{
     display:block;
     background-color: GoldenRod;
     width: 100px;
@@ -20,14 +20,8 @@ a[target]{
     padding: 0.2em 0.6em;
 }
 
-a:hover[target] { 
+#menu a:hover {   
     background-color:Gold;
-}
-
-a:hover {
-    color:Black;
-    background-color:transparent;
-    text-decoration:underline;
 }
 
 li {
@@ -45,15 +39,13 @@ p {
 <body>
 
 <!--Menu-->
-<div align="right">
+<div align="right" id="menu">
 <ul>
-    <li><a href="index.html" target="link">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     
-    <li><a href="catalogue.html"
-     target="html">Catalogue</a></li>
+    <li><a href="catalogue.html">Catalogue</a></li>
    
-     <li><a href="login.html"
-     target="link">Log in</a></li>
+     <li><a href="login.html" target="_blank">Log in</a></li>
 </ul>
 </div>
 
