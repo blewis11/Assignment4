@@ -22,17 +22,17 @@ my $result3 = index($new_password, $comma);
 
 #checking that none of the fields were left empty
 if(($full_name eq "") or ($user_name eq "") or ($password eq "") or ($new_password eq "")) {
-    print "Location: http://www.cs.mcgill.ca/~amosqu/error_page1.html\n\n";
+    print "Location: http://www.cs.mcgill.ca/~blewis11/error_page1.html\n\n";
 }
 else {
     #checking that none of the fields contain a comma
     if(($result != -1) or ($result1 != -1) or ($result2 != -1) or ($result3 != -1)) {
-	print "Location: http://www.cs.mcgill.ca/~amosqu/error_page2.html\n\n";
+	print "Location: http://www.cs.mcgill.ca/~blewis11/error_page2.html\n\n";
      }
      else{
      #if passwords don't match, redirect to error message
          if($password ne $new_password){
-	     print "Location: http://www.cs.mcgill.ca/~amosqu/error_page3.html\n\n";
+	     print "Location: http://www.cs.mcgill.ca/~blewis11/error_page3.html\n\n";
          } 
          #checking if username is contained in Members.csv  
          else { 
@@ -40,7 +40,7 @@ else {
                  our @split = split (',', $fields);
 		 #making sure username isn't already in Member.csv
 	         if($split[1] eq $user_name) {
-		     print "Location: http://www.cs.mcgill.ca/~amosqu/error_page4.html\n\n";
+		     print "Location: http://www.cs.mcgill.ca/~blewis11/error_page4.html\n\n";
 		     last;
 	         }
 	    } 
@@ -54,6 +54,6 @@ else {
      }
 }
 #redirect to login page
-print "Location: http://www.cs.mcgill.ca/~amosqu/registration.html\n\n";
+print "Location: http://www.cs.mcgill.ca/~blewis11/login.html\n\n";
 
 
