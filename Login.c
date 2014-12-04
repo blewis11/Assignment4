@@ -7,9 +7,9 @@
 //the username of the user that just logged in
 int printCatalogue(char* username){
 
-    FILE* catalogue = fopen("Catalogue.html", "r");
+    FILE* catalogue = fopen("catalogue.html", "r");
 
-    //the longest line in Catalog.html has around 350 characters. 400 was taken to be safe
+    //the longest line in catalogue.html has around 350 characters. 400 was taken to be safe
     char* buffer = malloc(400);
 
     fgets(buffer, 400, catalogue);
@@ -68,8 +68,6 @@ int displayError(){
 	return EXIT_SUCCESS;
 
 }
-
-
 
 int main(void){
 
