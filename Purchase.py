@@ -103,7 +103,7 @@ else:
 	
 #--------------------------------------------------------------------------
 #Now we have new values for file_quantities which we want to replace our original file values with
-	f = open('inventory.csv', 'wt')
+	f = open('Inventory.csv', 'wt')
 	writer = csv.writer(f)
 
 	file_quantity = map(str, file_quantity)
