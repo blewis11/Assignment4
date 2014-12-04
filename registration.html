@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Registration </title>
+
+<!-- Used to format webpage-->
+<style>
+body {
+    background-color: antiquewhite;
+    font-family: helvetica;
+}
+
+a[target]{
+    display:block;
+    background-color: GoldenRod;
+    width: 100px;
+    color: white;
+    text-decoration:none;
+    padding: 0.2em 0.6em;
+}
+
+a:hover[target] { 
+    background-color:Gold;
+}
+
+a:hover {
+    color:Black;
+    background-color:transparent;
+    text-decoration:underline;
+}
+
+li {
+    display: inline;
+}
+
+p {
+    font-family: helvetica;
+}
+
+</style>
+</head>
+
+<!--Begin formatting what is on page-->
+<body>
+
+<!--Menu-->
+<div align="right">
+<ul>
+    <li><a href="index.html" target="link">Home</a></li>
+    
+    <li><a href="catalogue.html"
+     target="html">Catalogue</a></li>
+   
+     <li><a href="login.html"
+     target="link">Log in</a></li>
+</ul>
+</div>
+
+    <center><h2>Donut panic. Register here.</center></h2>
+
+<!--Beginning of form-->
+<div align="center">
+     <img src="http://www.simpsoncrazy.com/content/pictures/homer/HomerSimpson15.gif" align="absmiddle" style=width:175px;height 175px; alt="Homer">
+
+<FORM action="http://www.cs.mcgill.ca/~amosqu/cgi-bin/Perl.pl" method="POST">
+    <br>
+    Full name: <br><input type="text" name="full_name" maxlength="20"><br>
+
+    Username: <br><input type="text" name="user_name" maxlength="8"><br>
+	
+    Password: <br><input type="password" name="password" maxlength="15"><br>
+	
+    Confirm password: <br><input type="password" name="new_password" maxlength="15"><br>
+   
+    <input type="submit" value ="Submit"><br><br>
+
+    Already a member? <a href="login.html"> Login</a> here!
+
+</FORM>
+</div>
+
+</body>
+</html>
