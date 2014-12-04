@@ -39,21 +39,19 @@ else {
 	    while(my $fields = <$csv>){
                  our @split = split (',', $fields);
 		 #making sure username isn't already in Member.csv
-	         if($split[1] eq $user_name) {
-		     print "Location: http://www.cs.mcgill.ca/~blewis11/error_page4.html\n\n";
-		     last;
+	         if($split[1] eq $user_name) {  
+		      print "Location: http://www.cs.mcgill.ca/~blewis11/error_page4.html\n\n";
+		      exit;
 	         }
-	    } 
+            }
 	    #closing csv file to reopen for appending
-	    close $csv;
-	    open($csv, '>>', $file);
-	    #append all the values onto Members.csv
-	    print $csv "$full_name,$user_name,$password,$new_password\n";
             close $csv;
-	}
-     }
+            open($csv, '>>', $file);
+            #append all the values onto Members.csv
+            print $csv "$full_name,$user_name,$password\n";
+            close $csv;
+	    #redirect to login page
+            print "Location: http://www.cs.mcgill.ca/~blewis11/login.html\n\n";
+         }
+    }
 }
-#redirect to login page
-print "Location: http://www.cs.mcgill.ca/~blewis11/login.html\n\n";
-
-
