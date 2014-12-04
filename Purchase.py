@@ -65,13 +65,13 @@ else:
 	purchase4 = form.getvalue('purchase4')
 
 #--------------------------------------------------------------------------
-	string_total = ""
+	string_total = "|"
 
 	if quantity1 > 0 and purchase1 == "on" : 
 		#calculate total
 		total_p1 = 3.99*quantity1
 		#construct string for bill viewing
-		string_total += ("Apple Cider Fritters: $" + str(total_p1) + '\n')
+		string_total += (" Apple Cider Fritters: $" + str(total_p1) + '|')
 		#subtract quantity purchased from inventory
 		file_quantity[0] = file_quantity[0] - quantity1
 	else: 
@@ -80,21 +80,21 @@ else:
 
 	if quantity2 > 0 and purchase2 == "on" :
 		total_p2 = 2.99*quantity2
-		string_total += ("Red Velvet: $" + str(total_p2) + '\n')
+		string_total += (" Red Velvet: $" + str(total_p2) + '|')
 		file_quantity[1] = file_quantity[1] - quantity2
 	else:
 		total_p2 = 0
 
 	if quantity3 > 0 and purchase3 == "on" :
 		total_p3 = 3.49*quantity3
-		string_total += ("Banana Caramel Pecan: $" + str(total_p3) + '\n')
+		string_total += (" Banana Caramel Pecan: $" + str(total_p3) + '|')
 		file_quantity[2] = file_quantity[2] - quantity3
 	else:
 		total_p3 = 0
 
 	if quantity4 > 0 and purchase4 == "on" :
 		total_p4 = 19.99*quantity4
-		string_total += ("Maple Bacon: $" + str(total_p4) + '\n')
+		string_total += (" Maple Bacon: $" + str(total_p4) + '|')
 		file_quantity[3] = file_quantity[3] - quantity4
 	else:
 		total_p4 = 0
