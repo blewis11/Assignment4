@@ -2,7 +2,7 @@
 
     <head>
 
-	<title>Login error</title>
+	<title>Out Of Stock</title>
 
     </head>
 
@@ -22,15 +22,16 @@
                 margin: 0;
                 padding: 0;
         }
-        #menu a {
+        button {
                 display: block;
                 background-color: GoldenRod;
                 width: 80px;
                 color: white;
+		font-family: helvetica;
                 text-decoration: none;
                 padding: 0.2em 0.6em;
-                                        
-   	#menu a:hover {
+        }                                
+   	button:hover {
                 background-color: Gold;
         }
         li {
@@ -53,8 +54,15 @@
 		<th>
         	    <center>
 			<font size="8">Oops<br><br></font>
-			We don't have many of those donuts left in stock, please check back later. <br />
-	    		 <a href="login.html">Continue</a>.
+			We don't have many of those donuts left in stock, please check back later. <br /><br>
+			<button onclick="goBack()"> Continue </button>
+
+			<script>
+			function goBack() {
+				window.history.back()
+			}
+			</script>
+
 			<br /><br />
 		    </center>
 		</th>
