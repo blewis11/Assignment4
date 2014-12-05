@@ -162,7 +162,7 @@ else:
 		print "<p> ------------------------------------</p>"
 		print "<p><b> Total = $%.2f </b></p>" %overall_total
 		print "<p> ------------------------------------</p>"
-		print "<img src=http://3.bp.blogspot.com/-ZVGjMlaHu0A/TVWIl3pwYWI/AAAAAAAAFkQ/Khtw_rTbsz4/s400/homer.bmp style=width:500px;height:500px alt='Homer bein sad with a donut'>"
+		print "<img src=sadhomer.jpg style=width:500px;height:500px alt='Homer bein sad with a donut'>"
 		print "<br><br><br>"
 		print "<p> Thank you very much for your order, click the link to confirm and go back to the home page or go back to the catalogue! </p>"
 		print "<br><br><a href='index.html' > Home </a>"
