@@ -11,3 +11,9 @@ Angie Mosquera, 260568249:
 	-error_page2.html
 	-error_page3.html
 	-error_page4.html
+
+Anthony Mirabeau, 260566824:
+	-login.html
+	-LoginError.html
+	-index.html
+	-Login.c
