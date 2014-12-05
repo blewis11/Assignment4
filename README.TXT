@@ -3,3 +3,11 @@ Bejal Lewis, 260513277:
 	-catalogue.html
 	-NotLoggedIn.html
 	-TooManyItems.html
+
+Angie Mosquera, 260568249:
+	-Perl.pl
+	-registration.html
+	-error_page1.html
+	-error_page2.html
+	-error_page3.html
+	-error_page4.html
